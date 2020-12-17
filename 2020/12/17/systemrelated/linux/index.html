@@ -20,17 +20,23 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://example.com/about/index.html">
+  <meta name="description" content="说Linuxjava开发之路：javaSE、Mysql、前端（HTML、CSS、JS）、javaWEB、ssm,vue、spring cloud 、MP、Git 操作系统：window、Linux 、mac 消息队列（kafka、RabbitMQ、RockeetMQ)，缓存（Redis），搜索引擎（ES） 集群分布式（需购买多台服务器，没有的话使用虚拟机） Linux一切皆文件：文件就 读 写（权">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux">
+<meta property="og:url" content="http://example.com/2020/12/17/systemrelated/linux/index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="说Linuxjava开发之路：javaSE、Mysql、前端（HTML、CSS、JS）、javaWEB、ssm,vue、spring cloud 、MP、Git 操作系统：window、Linux 、mac 消息队列（kafka、RabbitMQ、RockeetMQ)，缓存（Redis），搜索引擎（ES） 集群分布式（需购买多台服务器，没有的话使用虚拟机） Linux一切皆文件：文件就 读 写（权">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-12-17T10:02:12.000Z">
-<meta property="article:modified_time" content="2020-12-17T10:02:12.455Z">
+<meta property="og:image" content="http://example.com/2020/12/17/systemrelated/linux/image-20201109233809173.png">
+<meta property="og:image" content="http://example.com/2020/12/17/systemrelated/linux/image-20201109233937133.png">
+<meta property="article:published_time" content="2020-12-17T11:22:46.000Z">
+<meta property="article:modified_time" content="2020-12-17T11:47:20.205Z">
 <meta property="article:author" content="LZ">
+<meta property="article:tag" content="system">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2020/12/17/systemrelated/linux/image-20201109233809173.png">
 
-<link rel="canonical" href="http://example.com/about/">
+<link rel="canonical" href="http://example.com/2020/12/17/systemrelated/linux/">
 
 
 <script id="page-configurations">
@@ -38,13 +44,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>about | Blog
-</title>
+  <title>linux | Blog</title>
   
 
 
@@ -156,43 +161,116 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="en">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/17/systemrelated/linux/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="LZ">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          linux
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">about
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
 
-<div class="post-meta">
+              <time title="Created: 2020-12-17 19:22:46 / Modified: 19:47:20" itemprop="dateCreated datePublished" datetime="2020-12-17T19:22:46+08:00">2020-12-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/System/" itemprop="url" rel="index"><span itemprop="name">System</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="说Linux"><a href="#说Linux" class="headerlink" title="说Linux"></a>说Linux</h1><p>java开发之路：javaSE、Mysql、前端（HTML、CSS、JS）、javaWEB、ssm,vue、spring cloud 、MP、Git</p>
+<p>操作系统：window、Linux 、mac</p>
+<p>消息队列（kafka、RabbitMQ、RockeetMQ)，缓存（Redis），搜索引擎（ES）</p>
+<p>集群分布式（需购买多台服务器，没有的话使用虚拟机）</p>
+<p><strong>Linux一切皆文件：文件就 读 写（权限）</strong></p>
+<p><strong>学习方式：</strong></p>
+<ol>
+<li>认识Linux</li>
+<li>基本命令（文件操作、目录管理、文件属性、vim编辑器、账号管理、磁盘管理……)</li>
+<li>软件的安装和部署！（java、tomcat、docker）</li>
+</ol>
+<p>Linux ——&gt; Redis ——–&gt; Dock</p>
+<h1 id="入门概述"><a href="#入门概述" class="headerlink" title="入门概述"></a>入门概述</h1><blockquote>
+<p>Linux发行版</p>
+</blockquote>
+<p>Linux的发行版简单点就是将Linux内核与应用软件做一个打包</p>
+<p><img src="/2020/12/17/systemrelated/linux/image-20201109233809173.png" alt="image-20201109233809173"></p>
+<p><img src="/2020/12/17/systemrelated/linux/image-20201109233937133.png" alt="image-20201109233937133"></p>
+<h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><p>nohup java -jar app.jar &amp;            #后台运行java项目<br>tail -f nohup.out                   #在后端查看日志输出</p>
+<p>ps -ef | grep java                    #查看进程</p>
+<p>firewall-cmd –query-port=6768/tcp    #查看自己的防火墙对端口号的开放情况<br>netstat -anp | grep 8080            #查看端口使用情况<br>sudo lsof -i:8080                    #查看占用端口的PID<br>sudo kill -9 1234                    #结束某个进程（1234-&gt;PID）</p>
+<p>systemctl start mysqld                #重启mysql<br>systemctl status mysqld                #查看mysql运行状态</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/system/" rel="tag"># system</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/12/17/framework/MybatisPlus/" rel="prev" title="MybatisPlus">
+      <i class="fa fa-chevron-left"></i> MybatisPlus
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/12/17/framework/redis/" rel="next" title="Redis">
+      Redis <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -243,6 +321,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AF%B4Linux"><span class="nav-number">1.</span> <span class="nav-text">说Linux</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%A5%E9%97%A8%E6%A6%82%E8%BF%B0"><span class="nav-number">2.</span> <span class="nav-text">入门概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">常用命令</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
