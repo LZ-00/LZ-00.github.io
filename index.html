@@ -576,10 +576,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-12-17 19:37:42 / Modified: 19:38:39" itemprop="dateCreated datePublished" datetime="2020-12-17T19:37:42+08:00">2020-12-17</time>
+              <time title="Created: 2020-12-17 19:37:42" itemprop="dateCreated datePublished" datetime="2020-12-17T19:37:42+08:00">2020-12-17</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-12-22 18:48:00" itemprop="dateModified" datetime="2020-12-22T18:48:00+08:00">2020-12-22</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -607,6 +613,27 @@
 <p>==第二种级别（基于密钥的安全验证）：==</p>
 <p>为自己创建一对密钥，并把公钥放在需要访问的服务器上。连接ssh服务器时，客户端软件会向服务器发出请求，服务器接收到请求之后，现在服务器上你的主目录下寻找你的公钥，然后把它和你发过来的公钥进行比较。如果一直，服务器就用公钥加密<strong>“质询</strong>”并把它发给客户端软件。客户端软件接收到“<strong>质询</strong>”后就可以使用你的私钥在本地解密再把它发送给服务器完成登录。</p>
 <p><strong>与第一种级别相比，第二种级别不仅加密所有传输的数据，也不需要在网络上传送口令，因此安全性更高，可以有效防止中间人攻击</strong></p>
+<h1 id="加密"><a href="#加密" class="headerlink" title="加密"></a>加密</h1><h2 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h2><p>作用：一般用来加密或者签名</p>
+<p>特点：算法不可逆，相同的内容无论执行多少次MD5生成的结果始终一致</p>
+<p>结果：始终是16进制 32位长度的字符串</p>
+<h2 id="rsa"><a href="#rsa" class="headerlink" title="rsa"></a>rsa</h2><p>RSA的密文是对代表了明文的数字的E次方求mod N的结果。换句话说，就是将明文和自己做E次乘方，然后将其结果除以N求余数，这个余数就是密文。</p>
+<p><img src="/2020/12/17/security/security/20180916154825652" alt="img"></p>
+<p>该公式表示对密文的数字的D次方求mod N就可以得到明文。换句话说，将密文自己做D次乘法，再对其结果除以N求余数，就可以得到明文。</p>
+<p><img src="/2020/12/17/security/security/20180916155256423" alt="img"></p>
+<p><strong>总结</strong></p>
+<p><img src="/2020/12/17/security/security/20180916155436675" alt="img"></p>
+<p><img src="/2020/12/17/security/security/20180916155449615" alt="img"></p>
+<h2 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h2><h4 id="Base64编码原理"><a href="#Base64编码原理" class="headerlink" title="Base64编码原理"></a>Base64编码原理</h4><blockquote>
+<p>Base64编码的思想是：采用64个基本的ASCII码字符对数据进行重新编码。</p>
+<ul>
+<li>将需要编码的数据拆分成字节数组，以3个字节为一组，按顺序排列24位数据，再把这24位数据分成4组，即每组6位；</li>
+<li>再在每组的的最高位前补两个0凑足一个字节，这样就把一个3字节为一组的数据重新编码成了4个字节；</li>
+<li>当所要编码的数据的字节数不是3的整倍数，也就是说在分组时最后一组不够3个字节，这时在最后一组填充1到2个0字节，并在最后编码完成后在结尾添加1到2个=号。</li>
+</ul>
+</blockquote>
+<p><strong>对ABC进行Base64编码过程</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">- 首先取ABC对应的ASCII码值</span><br><span class="line">A : 65、B : 66、C : 67</span><br><span class="line">- 再取二进制值</span><br><span class="line">A : 01000001、B : 01000010、C : 01000011</span><br><span class="line">- 然后把这三个字节的二进制码接起来</span><br><span class="line">010000010100001001000011</span><br><span class="line">- 再以6位为单位分成4个数据块并在最高位填充两个0后形成4个字节的编码后的值</span><br><span class="line">00010000、00010100、00001001、00000011</span><br><span class="line">- 再把这4个字节数据转化成10进制数</span><br><span class="line">16、20、19、3</span><br><span class="line">- 最后根据Base64给出的64个基本字符表，查出对应的ASCII码字符</span><br><span class="line">Q、U、J、D</span><br><span class="line">这里的值实际就是数据在字符表中的索引。</span><br><span class="line">解码过程就是把4个字节再还原成3个字节再根据不同的数据形式把字节数组重新整理成数据。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
 
       
     </div>
