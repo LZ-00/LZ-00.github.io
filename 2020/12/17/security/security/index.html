@@ -22,7 +22,7 @@
 
   <meta name="description" content="SSHSSH的安全机制（idea快捷键 ctrl alt+m 抽取代码块作为方法） 两种级别的验证方式： &#x3D;&#x3D;第一种级别（基于口令的安全验证）：&#x3D;&#x3D; 只要你知道自己帐号和口令，就可以登录到远程主机。所有传输的数据都会被加密，但是不能保证你正在连接的服务器就是你想连接的服务器。可能会有别的服务器在冒充真正的服务器，也就是受到中间人攻击”这种方式的攻击 &#x3D;&#x3D;第二种级别（基于密钥的安全验证）：&#x3D;&#x3D; 为自">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Blog">
+<meta property="og:title" content="Security">
 <meta property="og:url" content="http://example.com/2020/12/17/security/security/index.html">
 <meta property="og:site_name" content="Blog">
 <meta property="og:description" content="SSHSSH的安全机制（idea快捷键 ctrl alt+m 抽取代码块作为方法） 两种级别的验证方式： &#x3D;&#x3D;第一种级别（基于口令的安全验证）：&#x3D;&#x3D; 只要你知道自己帐号和口令，就可以登录到远程主机。所有传输的数据都会被加密，但是不能保证你正在连接的服务器就是你想连接的服务器。可能会有别的服务器在冒充真正的服务器，也就是受到中间人攻击”这种方式的攻击 &#x3D;&#x3D;第二种级别（基于密钥的安全验证）：&#x3D;&#x3D; 为自">
@@ -31,9 +31,10 @@
 <meta property="og:image" content="http://example.com/2020/12/17/security/security/笔记/Typora/框架相关/Security/20180916155256423">
 <meta property="og:image" content="http://example.com/2020/12/17/security/security/笔记/Typora/框架相关/Security/20180916155436675">
 <meta property="og:image" content="http://example.com/2020/12/17/security/security/笔记/Typora/框架相关/Security/20180916155449615">
-<meta property="article:published_time" content="2020-12-17T11:37:42.678Z">
-<meta property="article:modified_time" content="2020-12-25T14:30:57.336Z">
+<meta property="article:published_time" content="2020-12-17T09:34:05.000Z">
+<meta property="article:modified_time" content="2020-12-25T14:33:44.456Z">
 <meta property="article:author" content="LZ">
+<meta property="article:tag" content="security">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2020/12/17/security/security/20180916154825652-1608906610104">
 
@@ -50,7 +51,7 @@
   };
 </script>
 
-  <title> | Blog</title>
+  <title>Security | Blog</title>
   
 
 
@@ -183,7 +184,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          Security
         </h1>
 
         <div class="post-meta">
@@ -193,15 +194,24 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-12-17 19:37:42" itemprop="dateCreated datePublished" datetime="2020-12-17T19:37:42+08:00">2020-12-17</time>
+              <time title="Created: 2020-12-17 17:34:05" itemprop="dateCreated datePublished" datetime="2020-12-17T17:34:05+08:00">2020-12-17</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-25 22:30:57" itemprop="dateModified" datetime="2020-12-25T22:30:57+08:00">2020-12-25</time>
+                <time title="Modified: 2020-12-25 22:33:44" itemprop="dateModified" datetime="2020-12-25T22:33:44+08:00">2020-12-25</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">安全</span></a>
+                </span>
+            </span>
 
           
 
@@ -310,6 +320,7 @@
 <p><strong>DES解密</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> encryptText 密文</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key 密钥</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> transformation 加密算法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> algorithm 加密类型</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">DeaDecrypt</span><span class="params">(String encryptText,String key,String transformation,String algorithm)</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line"></span><br><span class="line">        Cipher instance = Cipher.getInstance(transformation);</span><br><span class="line"></span><br><span class="line">        SecretKeySpec secretKeySpec = <span class="keyword">new</span> SecretKeySpec(key.getBytes(),algorithm);</span><br><span class="line"></span><br><span class="line">        instance.init(Cipher.DECRYPT_MODE,secretKeySpec);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">byte</span>[] bytes = instance.doFinal(Base64.decode(encryptText));</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> String(bytes);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
+<p>Base64</p>
 
     </div>
 
@@ -318,6 +329,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/security/" rel="tag"># security</a>
+          </div>
 
         
 
@@ -325,12 +339,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/12/17/framework/redis/" rel="prev" title="Redis">
-      <i class="fa fa-chevron-left"></i> Redis
+    <a href="/2020/12/17/framework/MybatisPlus/" rel="prev" title="MybatisPlus">
+      <i class="fa fa-chevron-left"></i> MybatisPlus
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/12/17/profiles/profiles/" rel="next" title="Profiles">
-      Profiles <i class="fa fa-chevron-right"></i>
+    <a href="/2020/12/17/systemrelated/linux/" rel="next" title="linux">
+      linux <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -411,13 +425,13 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
