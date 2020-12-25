@@ -20,23 +20,22 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="SSHSSH的安全机制两种级别的验证方式： &#x3D;&#x3D;第一种级别（基于口令的安全验证）：&#x3D;&#x3D; 只要你知道自己帐号和口令，就可以登录到远程主机。所有传输的数据都会被加密，但是不能保证你正在连接的服务器就是你想连接的服务器。可能会有别的服务器在冒充真正的服务器，也就是受到中间人攻击”这种方式的攻击 &#x3D;&#x3D;第二种级别（基于密钥的安全验证）：&#x3D;&#x3D; 为自己创建一对密钥，并把公钥放在需要访问的服务器上。连接ssh服务">
+  <meta name="description" content="SSHSSH的安全机制（idea快捷键 ctrl alt+m 抽取代码块作为方法） 两种级别的验证方式： &#x3D;&#x3D;第一种级别（基于口令的安全验证）：&#x3D;&#x3D; 只要你知道自己帐号和口令，就可以登录到远程主机。所有传输的数据都会被加密，但是不能保证你正在连接的服务器就是你想连接的服务器。可能会有别的服务器在冒充真正的服务器，也就是受到中间人攻击”这种方式的攻击 &#x3D;&#x3D;第二种级别（基于密钥的安全验证）：&#x3D;&#x3D; 为自">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Security">
+<meta property="og:title" content="Blog">
 <meta property="og:url" content="http://example.com/2020/12/17/security/security/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="SSHSSH的安全机制两种级别的验证方式： &#x3D;&#x3D;第一种级别（基于口令的安全验证）：&#x3D;&#x3D; 只要你知道自己帐号和口令，就可以登录到远程主机。所有传输的数据都会被加密，但是不能保证你正在连接的服务器就是你想连接的服务器。可能会有别的服务器在冒充真正的服务器，也就是受到中间人攻击”这种方式的攻击 &#x3D;&#x3D;第二种级别（基于密钥的安全验证）：&#x3D;&#x3D; 为自己创建一对密钥，并把公钥放在需要访问的服务器上。连接ssh服务">
+<meta property="og:description" content="SSHSSH的安全机制（idea快捷键 ctrl alt+m 抽取代码块作为方法） 两种级别的验证方式： &#x3D;&#x3D;第一种级别（基于口令的安全验证）：&#x3D;&#x3D; 只要你知道自己帐号和口令，就可以登录到远程主机。所有传输的数据都会被加密，但是不能保证你正在连接的服务器就是你想连接的服务器。可能会有别的服务器在冒充真正的服务器，也就是受到中间人攻击”这种方式的攻击 &#x3D;&#x3D;第二种级别（基于密钥的安全验证）：&#x3D;&#x3D; 为自">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2020/12/17/security/security/20180916154825652">
-<meta property="og:image" content="http://example.com/2020/12/17/security/security/20180916155256423">
-<meta property="og:image" content="http://example.com/2020/12/17/security/security/20180916155436675">
-<meta property="og:image" content="http://example.com/2020/12/17/security/security/20180916155449615">
-<meta property="article:published_time" content="2020-12-17T11:37:42.000Z">
-<meta property="article:modified_time" content="2020-12-22T10:48:00.799Z">
+<meta property="og:image" content="http://example.com/2020/12/17/security/security/20180916154825652-1608906610104">
+<meta property="og:image" content="http://example.com/2020/12/17/security/security/笔记/Typora/框架相关/Security/20180916155256423">
+<meta property="og:image" content="http://example.com/2020/12/17/security/security/笔记/Typora/框架相关/Security/20180916155436675">
+<meta property="og:image" content="http://example.com/2020/12/17/security/security/笔记/Typora/框架相关/Security/20180916155449615">
+<meta property="article:published_time" content="2020-12-17T11:37:42.678Z">
+<meta property="article:modified_time" content="2020-12-25T14:30:57.336Z">
 <meta property="article:author" content="LZ">
-<meta property="article:tag" content="安全">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/12/17/security/security/20180916154825652">
+<meta name="twitter:image" content="http://example.com/2020/12/17/security/security/20180916154825652-1608906610104">
 
 <link rel="canonical" href="http://example.com/2020/12/17/security/security/">
 
@@ -51,7 +50,7 @@
   };
 </script>
 
-  <title>Security | Blog</title>
+  <title> | Blog</title>
   
 
 
@@ -184,7 +183,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Security
+          
         </h1>
 
         <div class="post-meta">
@@ -201,17 +200,8 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-12-22 18:48:00" itemprop="dateModified" datetime="2020-12-22T18:48:00+08:00">2020-12-22</time>
+                <time title="Modified: 2020-12-25 22:30:57" itemprop="dateModified" datetime="2020-12-25T22:30:57+08:00">2020-12-25</time>
               </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AE%89%E5%85%A8/" itemprop="url" rel="index"><span itemprop="name">安全</span></a>
-                </span>
-            </span>
 
           
 
@@ -224,22 +214,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h1><h2 id="SSH的安全机制"><a href="#SSH的安全机制" class="headerlink" title="SSH的安全机制"></a><strong>SSH的安全机制</strong></h2><p><strong>两种级别的验证方式：</strong></p>
+        <h1 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h1><h2 id="SSH的安全机制"><a href="#SSH的安全机制" class="headerlink" title="SSH的安全机制"></a><strong>SSH的安全机制</strong></h2><p>（idea快捷键 ctrl alt+m 抽取代码块作为方法）</p>
+<p><strong>两种级别的验证方式：</strong></p>
 <p>==第一种级别（基于口令的安全验证）：==</p>
 <p>只要你知道自己帐号和口令，就可以登录到远程主机。所有传输的数据都会被加密，但是不能保证你正在连接的服务器就是你想连接的服务器。可能会有别的服务器在冒充真正的服务器，也就是受到中间人攻击”这种方式的攻击</p>
 <p>==第二种级别（基于密钥的安全验证）：==</p>
-<p>为自己创建一对密钥，并把公钥放在需要访问的服务器上。连接ssh服务器时，客户端软件会向服务器发出请求，服务器接收到请求之后，现在服务器上你的主目录下寻找你的公钥，然后把它和你发过来的公钥进行比较。如果一直，服务器就用公钥加密<strong>“质询</strong>”并把它发给客户端软件。客户端软件接收到“<strong>质询</strong>”后就可以使用你的私钥在本地解密再把它发送给服务器完成登录。</p>
+<p>为自己创建一对密钥，并把公钥放在需要访问的服务器上。连接ssh服务器时，客户端软件会向服务器发出请求，服务器接收到请求之后，现在服务器上你的主目录下寻找你的公钥，然后把它和你发过来的公钥进行比较。如果一致，服务器就用公钥加密<strong>“质询</strong>”并把它发给客户端软件。客户端软件接收到“<strong>质询</strong>”后就可以使用你的私钥在本地解密再把它发送给服务器完成登录。</p>
 <p><strong>与第一种级别相比，第二种级别不仅加密所有传输的数据，也不需要在网络上传送口令，因此安全性更高，可以有效防止中间人攻击</strong></p>
 <h1 id="加密"><a href="#加密" class="headerlink" title="加密"></a>加密</h1><h2 id="MD5"><a href="#MD5" class="headerlink" title="MD5"></a>MD5</h2><p>作用：一般用来加密或者签名</p>
 <p>特点：算法不可逆，相同的内容无论执行多少次MD5生成的结果始终一致</p>
 <p>结果：始终是16进制 32位长度的字符串</p>
 <h2 id="rsa"><a href="#rsa" class="headerlink" title="rsa"></a>rsa</h2><p>RSA的密文是对代表了明文的数字的E次方求mod N的结果。换句话说，就是将明文和自己做E次乘方，然后将其结果除以N求余数，这个余数就是密文。</p>
-<p><img src="/2020/12/17/security/security/20180916154825652" alt="img"></p>
+<p><img src="/2020/12/17/security/security/20180916154825652-1608906610104" alt="img"></p>
 <p>该公式表示对密文的数字的D次方求mod N就可以得到明文。换句话说，将密文自己做D次乘法，再对其结果除以N求余数，就可以得到明文。</p>
-<p><img src="/2020/12/17/security/security/20180916155256423" alt="img"></p>
+<p><img src="/2020/12/17/security/security/笔记/Typora/框架相关/Security/20180916155256423" alt="img"></p>
 <p><strong>总结</strong></p>
-<p><img src="/2020/12/17/security/security/20180916155436675" alt="img"></p>
-<p><img src="/2020/12/17/security/security/20180916155449615" alt="img"></p>
+<p><img src="/2020/12/17/security/security/笔记/Typora/框架相关/Security/20180916155436675" alt="img"></p>
+<p><img src="/2020/12/17/security/security/笔记/Typora/框架相关/Security/20180916155449615" alt="img"></p>
 <h2 id="base64"><a href="#base64" class="headerlink" title="base64"></a>base64</h2><h4 id="Base64编码原理"><a href="#Base64编码原理" class="headerlink" title="Base64编码原理"></a>Base64编码原理</h4><blockquote>
 <p>Base64编码的思想是：采用64个基本的ASCII码字符对数据进行重新编码。</p>
 <ul>
@@ -251,6 +242,74 @@
 <p><strong>对ABC进行Base64编码过程</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">- 首先取ABC对应的ASCII码值</span><br><span class="line">A : 65、B : 66、C : 67</span><br><span class="line">- 再取二进制值</span><br><span class="line">A : 01000001、B : 01000010、C : 01000011</span><br><span class="line">- 然后把这三个字节的二进制码接起来</span><br><span class="line">010000010100001001000011</span><br><span class="line">- 再以6位为单位分成4个数据块并在最高位填充两个0后形成4个字节的编码后的值</span><br><span class="line">00010000、00010100、00001001、00000011</span><br><span class="line">- 再把这4个字节数据转化成10进制数</span><br><span class="line">16、20、19、3</span><br><span class="line">- 最后根据Base64给出的64个基本字符表，查出对应的ASCII码字符</span><br><span class="line">Q、U、J、D</span><br><span class="line">这里的值实际就是数据在字符表中的索引。</span><br><span class="line">解码过程就是把4个字节再还原成3个字节再根据不同的数据形式把字节数组重新整理成数据。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<h1 id="密码学"><a href="#密码学" class="headerlink" title="密码学"></a>密码学</h1><p><strong>密码学：</strong>主要是研究编制密码和破译密码的学科</p>
+<p><strong>密码学的主要目的：</strong>研究如何隐藏信息并把信息传递出去的学科</p>
+<h2 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h2><h3 id="古典密码学："><a href="#古典密码学：" class="headerlink" title="古典密码学："></a><strong>古典密码学：</strong></h3><p>核心原理：替换法，移位法</p>
+<p>凯撒加密</p>
+<p>频度分析法进行破译密码，在不知道密码的情况下，进行破译密码</p>
+<h3 id="近代密码学"><a href="#近代密码学" class="headerlink" title="近代密码学"></a><strong>近代密码学</strong></h3><p>核心原理：替换法，移位法</p>
+<h3 id="现代密码学"><a href="#现代密码学" class="headerlink" title="现代密码学"></a><strong>现代密码学</strong></h3><ol>
+<li><p>散列函数</p>
+<p>MD5,SHA-1,SHA-256,SHA-512</p>
+</li>
+<li><p>对称加密</p>
+<p>DES加密和解密，AES加密和解密</p>
+<p>对称加密的核心原理：流加密，块加密</p>
+<p>toString 和 new String()核心原理和区别</p>
+<p>加密模式：ECB CBC</p>
+<p>填充模式：NoPadding和PKCS5padding</p>
+</li>
+<li><p>非对称加密</p>
+<p>特点</p>
+<p>RSA算法和ECC算法</p>
+<p>数字摘要</p>
+<p>base64核心加密原则，和base64原理</p>
+<p>数字签名和数字证书</p>
+<p>keytool工具的使用</p>
+</li>
+</ol>
+<h2 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h2><h3 id="古典密码学"><a href="#古典密码学" class="headerlink" title="古典密码学"></a>古典密码学</h3><p><strong>1.替换法</strong></p>
+<p>使用固定的信息，将原文换成密文</p>
+<p>如：bee,将b换成w,e缓存pp，单词就变成了wpp</p>
+<p><strong>加密方式</strong>：1&gt; 单表替换    2&gt;多表替换</p>
+<p>…</p>
+<p><strong>多表替换</strong>：有多张表，原文和密文进行对比</p>
+<p>如：表单 <code>abcde-swtrp</code>、表单2：<code>abcde-chjio</code>、表单3：<code>abcde-olkjh</code></p>
+<p>原文：bee  密钥：312 密文：lpo</p>
+<p><strong>2.移位法</strong></p>
+<p>移位法，是按照字母，在字母表上的位置，进行移动</p>
+<p>凯撒加密：</p>
+<p>例如：abcde往后面移动2位—&gt;cdefg</p>
+<p><strong>3.古典密码学的破解方法</strong></p>
+<p>频率分析法：概率论</p>
+<h3 id="近代密码学-1"><a href="#近代密码学-1" class="headerlink" title="近代密码学"></a>近代密码学</h3><p><strong>恩尼格密码机</strong>：核心使用的是移位法和替换法</p>
+<p>不过被人工智能之父<strong>图灵</strong>破解了</p>
+<h3 id="现代密码学-1"><a href="#现代密码学-1" class="headerlink" title="现代密码学"></a>现代密码学</h3><p><strong>1.散列函数（哈希函数</strong>）</p>
+<p>常见的加密方式：MD5、SHA-1、SHA-256</p>
+<p><strong>2.对称加密</strong></p>
+<p>对称加密，使用的加密解密方式使用同一把密钥</p>
+<p><strong>3.非对称加密</strong><br>非对称加密有两把密钥，使用公钥加密，私钥解密或者私钥加密，公钥解密</p>
+<h2 id="现代加密方式"><a href="#现代加密方式" class="headerlink" title="现代加密方式"></a>现代加密方式</h2><h3 id="对称加密"><a href="#对称加密" class="headerlink" title="对称加密"></a>对称加密</h3><p><strong>分为</strong>：流加密和块加密（相当于分组加密）</p>
+<ul>
+<li>常见加密算法<ul>
+<li>DES : Data Encryption Standard，即数据加密标准，是一种使用密钥加密的块算法，1977年被美国联邦政府的国家标准局确定为联邦资料处理标准（FIPS），并授权在非密级政府通信中使用，随后该算法在国际上广泛流传开来。</li>
+<li>AES : Advanced Encryption Standard, 高级加密标准 .在密码学中又称Rijndael加密法，是美国联邦政府采用的一种区块加密标准。这个标准用来替代原先的DES，已经被多方分析且广为全世界所使用。</li>
+</ul>
+</li>
+<li>特点<ul>
+<li>加密速度快, 可以加密大文件</li>
+<li>密文可逆, 一旦密钥文件泄漏, 就会导致数据暴露</li>
+<li>加密后编码表找不到对应字符, 出现乱码</li>
+<li>一般结合Base64使用</li>
+</ul>
+</li>
+</ul>
+<h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><p><strong>Des加密</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     *  des加密</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> input 原文</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key 密钥</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> transformation 加密算法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> algorithm 加密类型</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Nullable</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">DesEncrypt</span><span class="params">(String input,String key,String transformation,String algorithm)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        <span class="comment">//获取Cipher实例</span></span><br><span class="line">        Cipher instance = Cipher.getInstance(transformation);</span><br><span class="line">        <span class="comment">//param1:加密的key,param2:加密的类型</span></span><br><span class="line">        SecretKeySpec secretKeySpec = <span class="keyword">new</span> SecretKeySpec(key.getBytes(),algorithm);</span><br><span class="line">        <span class="comment">//param1:模式（加密、解密模式）,param2:加密的规则</span></span><br><span class="line">        instance.init(Cipher.ENCRYPT_MODE,secretKeySpec);</span><br><span class="line">        <span class="comment">//param:原文的字节数组</span></span><br><span class="line">        <span class="keyword">byte</span>[] bytes = instance.doFinal(input.getBytes());</span><br><span class="line">        String encrypt = Base64.encode(bytes);</span><br><span class="line">        <span class="keyword">return</span> encrypt;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>DES解密</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> encryptText 密文</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> key 密钥</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> transformation 加密算法</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> algorithm 加密类型</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">DeaDecrypt</span><span class="params">(String encryptText,String key,String transformation,String algorithm)</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line"></span><br><span class="line">        Cipher instance = Cipher.getInstance(transformation);</span><br><span class="line"></span><br><span class="line">        SecretKeySpec secretKeySpec = <span class="keyword">new</span> SecretKeySpec(key.getBytes(),algorithm);</span><br><span class="line"></span><br><span class="line">        instance.init(Cipher.DECRYPT_MODE,secretKeySpec);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">byte</span>[] bytes = instance.doFinal(Base64.decode(encryptText));</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> String(bytes);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
 
     </div>
 
@@ -259,9 +318,6 @@
     
 
       <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%E5%AE%89%E5%85%A8/" rel="tag"># 安全</a>
-          </div>
 
         
 
@@ -334,7 +390,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SSH"><span class="nav-number">1.</span> <span class="nav-text">SSH</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH%E7%9A%84%E5%AE%89%E5%85%A8%E6%9C%BA%E5%88%B6"><span class="nav-number">1.1.</span> <span class="nav-text">SSH的安全机制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A0%E5%AF%86"><span class="nav-number">2.</span> <span class="nav-text">加密</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MD5"><span class="nav-number">2.1.</span> <span class="nav-text">MD5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rsa"><span class="nav-number">2.2.</span> <span class="nav-text">rsa</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#base64"><span class="nav-number">2.3.</span> <span class="nav-text">base64</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Base64%E7%BC%96%E7%A0%81%E5%8E%9F%E7%90%86"><span class="nav-number">2.3.0.1.</span> <span class="nav-text">Base64编码原理</span></a></li></ol></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SSH"><span class="nav-number">1.</span> <span class="nav-text">SSH</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SSH%E7%9A%84%E5%AE%89%E5%85%A8%E6%9C%BA%E5%88%B6"><span class="nav-number">1.1.</span> <span class="nav-text">SSH的安全机制</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A0%E5%AF%86"><span class="nav-number">2.</span> <span class="nav-text">加密</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MD5"><span class="nav-number">2.1.</span> <span class="nav-text">MD5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rsa"><span class="nav-number">2.2.</span> <span class="nav-text">rsa</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#base64"><span class="nav-number">2.3.</span> <span class="nav-text">base64</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Base64%E7%BC%96%E7%A0%81%E5%8E%9F%E7%90%86"><span class="nav-number">2.3.0.1.</span> <span class="nav-text">Base64编码原理</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6"><span class="nav-number">3.</span> <span class="nav-text">密码学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%A7%E7%BA%B2"><span class="nav-number">3.1.</span> <span class="nav-text">大纲</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81%E5%AD%A6%EF%BC%9A"><span class="nav-number">3.1.1.</span> <span class="nav-text">古典密码学：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%91%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6"><span class="nav-number">3.1.2.</span> <span class="nav-text">近代密码学</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6"><span class="nav-number">3.1.3.</span> <span class="nav-text">现代密码学</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8E%86%E5%8F%B2"><span class="nav-number">3.2.</span> <span class="nav-text">历史</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E5%AF%86%E7%A0%81%E5%AD%A6"><span class="nav-number">3.2.1.</span> <span class="nav-text">古典密码学</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%91%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6-1"><span class="nav-number">3.2.2.</span> <span class="nav-text">近代密码学</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E5%AF%86%E7%A0%81%E5%AD%A6-1"><span class="nav-number">3.2.3.</span> <span class="nav-text">现代密码学</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%8E%B0%E4%BB%A3%E5%8A%A0%E5%AF%86%E6%96%B9%E5%BC%8F"><span class="nav-number">3.3.</span> <span class="nav-text">现代加密方式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86"><span class="nav-number">3.3.1.</span> <span class="nav-text">对称加密</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Demo"><span class="nav-number">3.3.1.1.</span> <span class="nav-text">Demo</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -355,13 +411,13 @@
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
