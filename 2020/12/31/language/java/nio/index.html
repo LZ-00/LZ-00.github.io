@@ -23,28 +23,29 @@
   <meta name="description" content="NIO简介Java NIO（New IO）： 从Java 1.4版本开始引入的一个新的IO API，可以替代标准的Java IO API。NIO与原来的IO有同样的作用和目的，但是使用的方式完全不同，NIO支持面向缓冲区的、基于通道的IO操作。NIO将以更加高效的方式进行文件的读写操作。 IO与NIO的区别 通道和缓冲区Java NIO系统的核心在于：通道(Channel)和缓冲区(Buffer)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="NIO">
-<meta property="og:url" content="http://example.com/2020/12/31/langage/java/nio/index.html">
+<meta property="og:url" content="http://example.com/2020/12/31/language/java/nio/index.html">
 <meta property="og:site_name" content="Blog">
 <meta property="og:description" content="NIO简介Java NIO（New IO）： 从Java 1.4版本开始引入的一个新的IO API，可以替代标准的Java IO API。NIO与原来的IO有同样的作用和目的，但是使用的方式完全不同，NIO支持面向缓冲区的、基于通道的IO操作。NIO将以更加高效的方式进行文件的读写操作。 IO与NIO的区别 通道和缓冲区Java NIO系统的核心在于：通道(Channel)和缓冲区(Buffer)">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20201231164653615.png">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20210101110936418.png">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20210101111623218.png">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20210101111639301.png">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20210101114907016.png">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20210101153002175.png">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20210101153018934.png">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20210101192329945.png">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20210101192352833.png">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20210101192410805.png">
-<meta property="og:image" content="http://example.com/2020/12/31/langage/java/nio/image-20210101192501591.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20201231164653615.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20210101110936418.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20210101111623218.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20210101111639301.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20210101114907016.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20210101153002175.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20210101153018934.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20210101192329945.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20210101192352833.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20210101192410805.png">
+<meta property="og:image" content="http://example.com/2020/12/31/language/java/nio/image-20210101192501591.png">
 <meta property="article:published_time" content="2020-12-31T08:41:16.000Z">
-<meta property="article:modified_time" content="2021-01-01T12:00:31.029Z">
+<meta property="article:modified_time" content="2021-01-01T12:13:19.666Z">
 <meta property="article:author" content="LZ">
+<meta property="article:tag" content="java,nio">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/12/31/langage/java/nio/image-20201231164653615.png">
+<meta name="twitter:image" content="http://example.com/2020/12/31/language/java/nio/image-20201231164653615.png">
 
-<link rel="canonical" href="http://example.com/2020/12/31/langage/java/nio/">
+<link rel="canonical" href="http://example.com/2020/12/31/language/java/nio/">
 
 
 <script id="page-configurations">
@@ -177,7 +178,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/31/langage/java/nio/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/12/31/language/java/nio/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -207,8 +208,17 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-01 20:00:31" itemprop="dateModified" datetime="2021-01-01T20:00:31+08:00">2021-01-01</time>
+                <time title="Modified: 2021-01-01 20:13:19" itemprop="dateModified" datetime="2021-01-01T20:13:19+08:00">2021-01-01</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/language/" itemprop="url" rel="index"><span itemprop="name">language</span></a>
+                </span>
+            </span>
 
           
 
@@ -223,13 +233,13 @@
       
         <h1 id="NIO"><a href="#NIO" class="headerlink" title="NIO"></a>NIO</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p><strong>Java NIO（New IO）：</strong></p>
 <p>从Java 1.4版本开始引入的一个新的IO API，<strong>可以替代标准的Java IO API。</strong>NIO与原来的IO有同样的作用和目的，但是使用的方式完全不同，NIO<strong>支持面向缓冲区的、基于通道的IO操作</strong>。NIO将以<strong>更加高效的方式进行文件的读写</strong>操作。</p>
-<h2 id="IO与NIO的区别"><a href="#IO与NIO的区别" class="headerlink" title="IO与NIO的区别"></a><strong>IO与NIO的区别</strong></h2><p><img src="/2020/12/31/langage/java/nio/image-20201231164653615.png" alt="image-20201231164653615"></p>
+<h2 id="IO与NIO的区别"><a href="#IO与NIO的区别" class="headerlink" title="IO与NIO的区别"></a><strong>IO与NIO的区别</strong></h2><p><img src="/2020/12/31/language/java/nio/image-20201231164653615.png" alt="image-20201231164653615"></p>
 <h2 id="通道和缓冲区"><a href="#通道和缓冲区" class="headerlink" title="通道和缓冲区"></a>通道和缓冲区</h2><p><strong>Java NIO系统的核心在于</strong>：通道(Channel)和缓冲区(Buffer)。</p>
 <p><strong>通道表示</strong>打开到IO 设备(例如：文件、套接字)的连接。若需要使用NIO 系统，<strong>需要获取用于连接IO 设备的通道以及用于容纳数据的缓冲区。然后操作缓冲区，对数据进行处理。</strong></p>
 <p>==简而言之，Channel 负责传输，Buffer 负责存储==</p>
 <h3 id="Buffer"><a href="#Buffer" class="headerlink" title="Buffer"></a>Buffer</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 1.缓冲区(Buffer)：在Java NIO中负责数据的存取/缓冲区底层就是数组。用于存储不同数据类型的数据</span></span><br><span class="line"><span class="comment"> * 根据数据类型不同提供了不同类型的缓冲区（boolean除外）</span></span><br><span class="line"><span class="comment"> * ByteBuffer</span></span><br><span class="line"><span class="comment"> * ShortBuffer</span></span><br><span class="line"><span class="comment"> * CharBuffer</span></span><br><span class="line"><span class="comment"> * IntBuffer</span></span><br><span class="line"><span class="comment"> * LongBuffer</span></span><br><span class="line"><span class="comment"> * FloatBuffer</span></span><br><span class="line"><span class="comment"> * DoubleBuffer</span></span><br><span class="line"><span class="comment"> * 上述缓冲区可以通过.allocate()获取</span></span><br><span class="line"><span class="comment"> * 2.直接缓冲区与非直接缓冲区：</span></span><br><span class="line"><span class="comment"> * 非直接缓冲区：应通过allocate方法分配缓冲区，将缓存建立在jvm缓冲区里面</span></span><br><span class="line"><span class="comment"> * 直接缓冲区：应通过allocateDirect方法分配缓冲区，将缓存建立在物理缓存里面</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/12/31/langage/java/nio/image-20210101110936418.png" alt="image-20210101110936418"></p>
+<p><img src="/2020/12/31/language/java/nio/image-20210101110936418.png" alt="image-20210101110936418"></p>
 <p><strong>demo1</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">     <span class="function"><span class="keyword">void</span> <span class="title">testBuffer</span><span class="params">()</span></span>&#123;</span><br><span class="line">        String str = <span class="string">&quot;abcde&quot;</span>;</span><br><span class="line">        ByteBuffer buffer = ByteBuffer.allocate(<span class="number">1024</span>);</span><br><span class="line">        <span class="comment">//put</span></span><br><span class="line">        buffer.put(str.getBytes());</span><br><span class="line">        System.out.println(<span class="string">&quot;position； &quot;</span>+buffer.position());</span><br><span class="line">        System.out.println(<span class="string">&quot;limit； &quot;</span>+buffer.limit());</span><br><span class="line">        System.out.println(<span class="string">&quot;capacity； &quot;</span>+buffer.capacity());</span><br><span class="line">        <span class="comment">//切换成读的状态（变换position、limit的位置）</span></span><br><span class="line">        buffer.flip();</span><br><span class="line">        <span class="keyword">byte</span>[] dst = <span class="keyword">new</span> <span class="keyword">byte</span>[buffer.limit()];</span><br><span class="line">        buffer.get(dst,<span class="number">0</span>,<span class="number">2</span>);</span><br><span class="line">        System.out.println(<span class="keyword">new</span> String(dst));</span><br><span class="line">        System.out.println(buffer.position());</span><br><span class="line">        <span class="comment">//mark():  标记</span></span><br><span class="line">        buffer.mark();</span><br><span class="line">        buffer.get(dst,<span class="number">2</span>,<span class="number">2</span>);</span><br><span class="line">        System.out.println(<span class="keyword">new</span> String(dst));</span><br><span class="line">        System.out.println(buffer.position());</span><br><span class="line">        <span class="comment">//reset(): 恢复到mark位置</span></span><br><span class="line">        buffer.reset();</span><br><span class="line">        System.out.println(buffer.position());</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
@@ -241,10 +251,10 @@
 <p><strong>直接字节缓冲区</strong>还可以通过<strong>FileChannel 的map()</strong> 方法将文件区域直接映射到内存中来创建。该方法返回MappedByteBuffer。Java 平台的实现有助于通过JNI 从本机代码创建直接字节缓冲区。<strong>如果以上这些缓冲区中的某个缓冲区实例指的是不可访问的内存区域，则试图访问该区域不会更改该缓冲区的内容，并且将会在访问期间或稍后的某个时间导致抛出不确定的异常。</strong></p>
 <p>字节缓冲区是直接缓冲区还是非直接缓冲区可通过调用其**isDirect()**方法来确定。提供此方法是为了能够在性能关键型代码中执行显式缓冲区管理。</p>
 <p>==Different==</p>
-<p><img src="/2020/12/31/langage/java/nio/image-20210101111623218.png" alt="image-20210101111623218"></p>
-<p><img src="/2020/12/31/langage/java/nio/image-20210101111639301.png" alt="image-20210101111639301"></p>
+<p><img src="/2020/12/31/language/java/nio/image-20210101111623218.png" alt="image-20210101111623218"></p>
+<p><img src="/2020/12/31/language/java/nio/image-20210101111639301.png" alt="image-20210101111639301"></p>
 <h3 id="Channel"><a href="#Channel" class="headerlink" title="Channel"></a>Channel</h3><p><strong>通道（Channel）</strong>：由java.nio.channels 包定义的。Channel 表示<strong>IO 源与目标打开的连接</strong>。Channel 类似于传统的“流”。只不过Channel 本身不能直接访问数据，Channel 只能与Buffer 进行交互。</p>
-<p><img src="/2020/12/31/langage/java/nio/image-20210101114907016.png" alt="image-20210101114907016"></p>
+<p><img src="/2020/12/31/language/java/nio/image-20210101114907016.png" alt="image-20210101114907016"></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> *  一、通道（Channel）：用于源节点与目标节点的连接。在Java NIO中负责将缓冲区中数据的传输。Channel本身不存储数据，因此需要配合缓冲区进行传输</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *  二、通道的主要实现类</span></span><br><span class="line"><span class="comment"> *  java.nio.channels.Channel 接口：</span></span><br><span class="line"><span class="comment"> *  |--FileChannel</span></span><br><span class="line"><span class="comment"> *  |--SocketChannel</span></span><br><span class="line"><span class="comment"> *  |--ServerSocketChannel</span></span><br><span class="line"><span class="comment"> *  |--DatagramChannel</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *  三、获取通道</span></span><br><span class="line"><span class="comment"> *  1.java针对支持通道的类提供了getChannel()方法</span></span><br><span class="line"><span class="comment"> *  本地IO：</span></span><br><span class="line"><span class="comment"> *      FileInputStream/FileOutputStream</span></span><br><span class="line"><span class="comment"> *      RandomAccessFile</span></span><br><span class="line"><span class="comment"> *   网络IO：</span></span><br><span class="line"><span class="comment"> *      Socket</span></span><br><span class="line"><span class="comment"> *      ServerSocket</span></span><br><span class="line"><span class="comment"> *      DatagramSocket</span></span><br><span class="line"><span class="comment"> *   2.在JDK 1.7 中的NIO.2针对各个通道提供了静态方法open()</span></span><br><span class="line"><span class="comment"> *   3.在JDK 1.7 中的NIO.2的Files工具类的newByteChannel();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>将Buffer 中数据写入Channel:</strong></p>
@@ -265,8 +275,8 @@
 
 <h4 id="分散与聚集"><a href="#分散与聚集" class="headerlink" title="分散与聚集"></a>分散与聚集</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*   五、分散（Scatter）与聚集（Gather）</span></span><br><span class="line"><span class="comment">*   分散读取（Scatter Readers）：将通道中的数据分散到多个缓冲区中</span></span><br><span class="line"><span class="comment">*   聚集写入（Gathering Writes）：将多个缓冲区的数据聚集到通道中</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2020/12/31/langage/java/nio/image-20210101153002175.png" alt="image-20210101153002175"></p>
-<p><img src="/2020/12/31/langage/java/nio/image-20210101153018934.png" alt="image-20210101153018934"></p>
+<p><img src="/2020/12/31/language/java/nio/image-20210101153002175.png" alt="image-20210101153002175"></p>
+<p><img src="/2020/12/31/language/java/nio/image-20210101153018934.png" alt="image-20210101153018934"></p>
 <p><strong>demo</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">test4</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    RandomAccessFile raf = <span class="keyword">new</span> RandomAccessFile(<span class="string">&quot;1.txt&quot;</span>, <span class="string">&quot;rw&quot;</span>);</span><br><span class="line"></span><br><span class="line">    FileChannel inChannel = raf.getChannel();</span><br><span class="line">    ByteBuffer buffer1 = ByteBuffer.allocate(<span class="number">100</span>);</span><br><span class="line">    ByteBuffer buffer2 = ByteBuffer.allocate(<span class="number">1024</span>);</span><br><span class="line">    <span class="comment">//分散读取</span></span><br><span class="line">    ByteBuffer[] dst = &#123;buffer1,buffer2&#125;;</span><br><span class="line">    inChannel.read(dst);</span><br><span class="line">    <span class="keyword">for</span> (ByteBuffer buf : dst)&#123;</span><br><span class="line">        buf.flip();</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="keyword">new</span> String(dst[<span class="number">0</span>].array(),<span class="number">0</span>,dst[<span class="number">0</span>].limit()));</span><br><span class="line">    System.out.println(<span class="string">&quot;--------scatter------------&quot;</span>);</span><br><span class="line">    System.out.println(<span class="keyword">new</span> String(dst[<span class="number">1</span>].array(),<span class="number">0</span>,dst[<span class="number">1</span>].limit()));</span><br><span class="line">    <span class="comment">//聚集写入</span></span><br><span class="line">    RandomAccessFile raf2 = <span class="keyword">new</span> RandomAccessFile(<span class="string">&quot;2.txt&quot;</span>, <span class="string">&quot;rw&quot;</span>);</span><br><span class="line">    FileChannel raf2Channel = raf2.getChannel();</span><br><span class="line"></span><br><span class="line">    raf2Channel.write(dst);</span><br><span class="line"></span><br><span class="line">    raf2Channel.close();</span><br><span class="line">    raf2Channel.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -280,10 +290,10 @@
 
 
 
-<h4 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h4><p><img src="/2020/12/31/langage/java/nio/image-20210101192329945.png" alt="image-20210101192329945"></p>
-<p><img src="/2020/12/31/langage/java/nio/image-20210101192352833.png" alt="image-20210101192352833"></p>
-<p><img src="/2020/12/31/langage/java/nio/image-20210101192410805.png" alt="image-20210101192410805"></p>
-<p><img src="/2020/12/31/langage/java/nio/image-20210101192501591.png" alt="image-20210101192501591"></p>
+<h4 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h4><p><img src="/2020/12/31/language/java/nio/image-20210101192329945.png" alt="image-20210101192329945"></p>
+<p><img src="/2020/12/31/language/java/nio/image-20210101192352833.png" alt="image-20210101192352833"></p>
+<p><img src="/2020/12/31/language/java/nio/image-20210101192410805.png" alt="image-20210101192410805"></p>
+<p><img src="/2020/12/31/language/java/nio/image-20210101192501591.png" alt="image-20210101192501591"></p>
 <p><strong>demo</strong></p>
 <p>==client==</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    SocketChannel sChannel = SocketChannel.open(<span class="keyword">new</span> InetSocketAddress(<span class="string">&quot;127.0.0.1&quot;</span>, <span class="number">9898</span>));</span><br><span class="line">    <span class="comment">//切换成非阻塞式</span></span><br><span class="line">    sChannel.configureBlocking(<span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line">    ByteBuffer byteBuffer = ByteBuffer.allocate(<span class="number">1024</span>);</span><br><span class="line"></span><br><span class="line">    Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">    <span class="keyword">while</span> (scanner.hasNext())&#123;</span><br><span class="line">        String next = scanner.next();</span><br><span class="line">        byteBuffer.put((LocalDateTime.now()+<span class="string">&quot;\n&quot;</span> +next).getBytes());</span><br><span class="line">        byteBuffer.flip();</span><br><span class="line">        sChannel.write(byteBuffer);</span><br><span class="line">        byteBuffer.clear();</span><br><span class="line">    &#125;</span><br><span class="line">    sChannel.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -301,6 +311,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/java-nio/" rel="tag"># java,nio</a>
+          </div>
 
         
 
@@ -308,10 +321,13 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/12/31/language/java/nio/" rel="prev" title="NIO">
-      <i class="fa fa-chevron-left"></i> NIO
+    <a href="/2020/12/28/assist/assistdev/" rel="prev" title="AssistDev">
+      <i class="fa fa-chevron-left"></i> AssistDev
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2020/12/31/langage/java/nio/" rel="next" title="NIO">
+      NIO <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
