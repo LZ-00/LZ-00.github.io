@@ -1,0 +1,70 @@
+.quotes {
+    width: 1000px;
+    margin: 0px auto 120px auto;
+    padding-top: 63px;
+}
+.text5 {
+    font-size: 30px;
+    color: #ffffff;
+}
+#nav {
+    font-size: 18px;
+    background: rgba(56, 134, 72, 0.43);
+}
+#nav ul {
+    width: 770px;
+    margin: auto;
+    overflow: hidden;
+}
+#nav ul li a {
+    color: #fff;
+}
+#nav ul li {
+    padding: 10px 20px;
+    text-align: center;
+    list-style: none;
+    float: left;
+}
+
+.blogitem{
+    margin: auto;
+    width: 730px;
+    background: #fff;
+}
+.title {
+    text-align: center;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+h1.t_nav{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 40px;
+    height: 40px;
+    margin: 20px auto;
+}
+h1.t_nav span {
+    float: right;
+    color: #666;
+}
+h1.t_nav a {
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    background: #8BBF5D;
+}
+
+.about-bg{background: url(../images/about-bg.jpg);}
+.title a:hover {
+    padding: 0;
+}
+.text {
+    font-size: 14px;
+    padding: 20px 40px;
+}
+.text p {
+    line-height: 24px;
+    font-size: 16px;
+}
