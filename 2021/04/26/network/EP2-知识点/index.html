@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20210424170820.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20210425122417.png">
 <meta property="article:published_time" content="2021-04-26T04:45:25.000Z">
-<meta property="article:modified_time" content="2021-04-26T04:47:26.523Z">
+<meta property="article:modified_time" content="2021-04-26T17:05:44.285Z">
 <meta property="article:author" content="LZ">
 <meta property="article:tag" content="SDN">
 <meta name="twitter:card" content="summary">
@@ -191,10 +191,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-04-26 12:45:25 / Modified: 12:47:26" itemprop="dateCreated datePublished" datetime="2021-04-26T12:45:25+08:00">2021-04-26</time>
+              <time title="Created: 2021-04-26 12:45:25" itemprop="dateCreated datePublished" datetime="2021-04-26T12:45:25+08:00">2021-04-26</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-04-27 01:05:44" itemprop="dateModified" datetime="2021-04-27T01:05:44+08:00">2021-04-27</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -239,7 +245,7 @@
 </li>
 </ol>
 <h1 id="云网络"><a href="#云网络" class="headerlink" title="云网络"></a>云网络</h1><h2 id="SDN"><a href="#SDN" class="headerlink" title="SDN"></a>SDN</h2><ol>
-<li><p>OpoenDaylight使用Java编写</p>
+<li><p>OpenDaylight使用Java编写</p>
 </li>
 <li><p>Scapy使用Python编写</p>
 </li>
@@ -258,6 +264,8 @@
 <li><p>sFlow Collector安装启动后的默认监听端口是<strong>6343</strong>。</p>
 </li>
 <li><p>OpenDaylight默认启动的监听端口号是<strong>6633</strong>。</p>
+</li>
+<li><p>PCEP使用TCP传输机制，TCP端口号为<strong>4189</strong></p>
 </li>
 <li><p>Netperf默认使用TCP传输层协议。</p>
 </li>
@@ -288,8 +296,6 @@
 </li>
 <li><p>odl-netconf-connector-all不是安装L2Switch项目必需的组件。</p>
 </li>
-<li><p>PCEP使用TCP传输机制，TCP端口号为<strong>4189</strong></p>
-</li>
 <li><p>单点对单点的intents：在外部路由器和SDN BGP  Speakers之间建立BGP对等会话使用单向intents。每个intents在SDN网络中连接两个连接点。每个连接点包含以下信息：SDN交换机的DPID、交换机Port和连接的BGP Speaker路由器的MAC地址。</p>
 </li>
 <li><p>Ganglia监控工具监控粒度为1分钟。</p>
@@ -316,7 +322,7 @@
 <li>SDN控制器构造PacketOut消息向S3的所有端口分别发送LLDP数据包。</li>
 <li>控制器向交换机S3中下发流表，流表规则为：将从Controller端口收到的LLDP数据包从他的对应端口发送出去。</li>
 <li>控制器向交换机S4中下发流表，流表规则为：将从非Controller接收到LLDP数据包发送给控制器。</li>
-<li>通过以上三步，控制器只能发现h1与h2之间的单向链路。\</li>
+<li>通过以上三步，控制器只能发现h1与h2之间的单向链路。</li>
 </ul>
 </li>
 <li><p>OpenDaylight采用了MD-SAL作为控制器平台服务层和南向接口及协议插件层的中间适配层，以实现北向接口与南向接口的解耦，保证南北向接口独立发展，互不影响。</p>
@@ -354,8 +360,19 @@
 </li>
 <li><p>L2Switch项目包含以下几个部分：Packet Handler 、Loop Remover 、Arp Handler 、Address Tracker、Host Tracker、L2 Switch Main</p>
 </li>
+<li><p>odl-netconf-connector-all不是安装L2Switch项目必需的组件</p>
+</li>
 <li><p>NETCONF中定义了三种消息类型，分别是hello， rpc和rpc-reply, notification。</p>
 </li>
+<li><p>组表包括Group ID、Group Type、Counters和Action Buckets几个部分。 </p>
+</li>
+<li><p>通过Postman查询数据平面网络拓扑，需要借助到Topology的OPERATIONAL子资源节点。       </p>
+</li>
+</ol>
+<p>判断</p>
+<ol>
+<li>OpenFlow1.3中流表包括三个字段：包头域、计数器以及行动。 X错</li>
+<li>控制平面管理器（CPMan）主要是用来监控系统性能，如：CPU、MEM和硬盘利用率，I/O负载和网络流量情况等。                                               X</li>
 </ol>
 <h2 id="云网络-1"><a href="#云网络-1" class="headerlink" title="云网络"></a>云网络</h2><ol>
 <li>Linux的磁盘分区包括主分区、逻辑分区、扩展分区和交换分区。</li>
@@ -398,6 +415,23 @@
 </ul>
 </li>
 <li>打通您的VPC与传统数据中心，所以需要基于公网的 VPN 或者专线。</li>
+<li><ul>
+<li>同一个云服务器ECS实例只能添加到同一个伸缩组中</li>
+<li>云服务器ECS实例的状态必须为运行中才能添加到伸缩组中去</li>
+<li>同一个伸缩组中云服务器ECS实例必需加入负载均衡SLB白名单</li>
+</ul>
+</li>
+<li>四层是通过SLB中设定的转发策略和规则和报文中的目标IP地址和端口分发流 量，七层是通过报文中真正有意义的应用层内容和负载均衡SLB中设定的转发策略和规则分发流量</li>
+<li>主备服务器组是在监听维度上维护的，并且只支持四层监听</li>
+<li>在阿里云专有网络VPC创建后，路由器也是随着VPC一起自动创建的，所以不需要手动创建了。这个 时候需要继续创建交换机才能在交换机中创建其他云产品。</li>
+</ol>
+<h2 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h2><ol>
+<li><p>在使用阿里云的负载均衡SLB实例时，做了如下健康检查的配置:响应超时时间为 5 秒，健康检查间隔为 2秒，不健康阀值为 3，健康阀值为  3，即对于确认一个后端云服务器ECS实例是不健康的，需要连续三次健康检查超时。则在某后端云服务器ECS实例状态异常后，被负载均衡SLB实例从后端服务器中移出的时间窗为 是多久?</p>
+<p>​    ECS被负载均衡SLB实例从后端服务器中移出的时间窗为是多久。即后端云服务器ECS实例从健康状态，到健康检查不健康状态的时间窗的时长，此题时间窗= (健康检查成功响应时间 5S x 健康阈值 3) + 检查间隔 2S x (健康阈值 3 - 1)=19S</p>
+</li>
+<li><p>在使用阿里云的负载均衡SLB实例时，做了如下健康检查的配置:响应超时时间为 5 秒，健康检查间隔为 2  秒，不健康阀值为3，健康阀值为3。即对于确认一个云服务器ECS实例是健康的，需要连续三次得到正常响应。如果某后端云服务器ECS实例当前状态是不健康的，现在对该实例进行修复，可以通过健康检查确认该实例是健康的时间窗是多久?</p>
+<p>后端云服务器ECS实例当从不健康状态，到通过健康检查确认其健康状态的时间窗的时 长，所以此题时间窗=(健康检查成功响应时间 1S x 健康阈值 3S) + 健康检查间隔 2S x (健康阈值 3-1)=7S</p>
+</li>
 </ol>
 
     </div>
@@ -479,7 +513,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BC%A0%E7%BB%9F%E7%BD%91%E7%BB%9C"><span class="nav-number">1.</span> <span class="nav-text">传统网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E5%B1%82"><span class="nav-number">1.1.</span> <span class="nav-text">物理层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82"><span class="nav-number">1.2.</span> <span class="nav-text">数据链路层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="nav-number">1.3.</span> <span class="nav-text">网络层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%BE%93%E5%B1%82"><span class="nav-number">1.4.</span> <span class="nav-text">运输层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E5%B1%82"><span class="nav-number">1.5.</span> <span class="nav-text">应用层</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%91%E7%BD%91%E7%BB%9C"><span class="nav-number">2.</span> <span class="nav-text">云网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SDN"><span class="nav-number">2.1.</span> <span class="nav-text">SDN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%91%E7%BD%91%E7%BB%9C-1"><span class="nav-number">2.2.</span> <span class="nav-text">云网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%91%E5%AD%98%E5%82%A8"><span class="nav-number">2.3.</span> <span class="nav-text">云存储</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%91%E5%B9%B3%E5%8F%B0"><span class="nav-number">2.4.</span> <span class="nav-text">云平台</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E8%99%9A%E6%8B%9F%E5%8C%96"><span class="nav-number">2.5.</span> <span class="nav-text">网络虚拟化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C4-EP2"><span class="nav-number">2.6.</span> <span class="nav-text">C4_EP2</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BC%A0%E7%BB%9F%E7%BD%91%E7%BB%9C"><span class="nav-number">1.</span> <span class="nav-text">传统网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%89%A9%E7%90%86%E5%B1%82"><span class="nav-number">1.1.</span> <span class="nav-text">物理层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82"><span class="nav-number">1.2.</span> <span class="nav-text">数据链路层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="nav-number">1.3.</span> <span class="nav-text">网络层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%BE%93%E5%B1%82"><span class="nav-number">1.4.</span> <span class="nav-text">运输层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%94%E7%94%A8%E5%B1%82"><span class="nav-number">1.5.</span> <span class="nav-text">应用层</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%91%E7%BD%91%E7%BB%9C"><span class="nav-number">2.</span> <span class="nav-text">云网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SDN"><span class="nav-number">2.1.</span> <span class="nav-text">SDN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%91%E7%BD%91%E7%BB%9C-1"><span class="nav-number">2.2.</span> <span class="nav-text">云网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%91%E5%AD%98%E5%82%A8"><span class="nav-number">2.3.</span> <span class="nav-text">云存储</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%91%E5%B9%B3%E5%8F%B0"><span class="nav-number">2.4.</span> <span class="nav-text">云平台</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%BB%9C%E8%99%9A%E6%8B%9F%E5%8C%96"><span class="nav-number">2.5.</span> <span class="nav-text">网络虚拟化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C4-EP2"><span class="nav-number">2.6.</span> <span class="nav-text">C4_EP2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97"><span class="nav-number">2.7.</span> <span class="nav-text">计算</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
