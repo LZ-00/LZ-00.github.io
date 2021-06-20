@@ -43,7 +43,7 @@
 <meta property="og:image" content="http://example.com/2020/12/17/framework/redis/image-20201128150856722-1616490168233.png">
 <meta property="og:image" content="http://example.com/2020/12/17/framework/redis/image-20201128151806143-1616490168233.png">
 <meta property="article:published_time" content="2020-12-17T11:26:14.000Z">
-<meta property="article:modified_time" content="2021-03-23T09:03:05.982Z">
+<meta property="article:modified_time" content="2021-06-20T09:50:00.543Z">
 <meta property="article:author" content="LZ">
 <meta property="article:tag" content="数据持久化">
 <meta name="twitter:card" content="summary">
@@ -212,7 +212,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-03-23 17:03:05" itemprop="dateModified" datetime="2021-03-23T17:03:05+08:00">2021-03-23</time>
+                <time title="Modified: 2021-06-20 17:50:00" itemprop="dateModified" datetime="2021-06-20T17:50:00+08:00">2021-06-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -616,11 +616,7 @@
 <p>@Cacheable(value=”testcache”,key=”#userName”)<strong>condition</strong>缓存的条件，可以为空，使用 SpEL 编写，返回 true 或者 false，只有为 true 才进行缓存例如：</p>
 <p>@Cacheable(value=”testcache”,condition=”#userName.length()&gt;2”)</p>
 <p> 表 2. @CachePut 作用和配置方法 {: #表-2-cacheput-作用和配置方法}</p>
-<p><strong>@CachePut 的作用</strong> 主要针对方法配置，能够根据方法的请求参数对其结果进行缓存，<strong>和 @Cacheable 不同的是，它每次都会触发真实方法的调用 @CachePut 主要的参数 value缓存的名称</strong>，在 spring 配置文件中定义，必须指定至少一个例如：</p>
-<p>@Cacheable(value=”mycache”) 或者</p>
-<p>@Cacheable(value={”cache1”,”cache2”}key缓存的 key，可以为空，如果指定要按照 SpEL 表达式编写，如果不指定，则缺省按照方法的所有参数进行组合例如：</p>
-<p>@Cacheable(value=”testcache”,key=”#userName”)condition缓存的条件，可以为空，使用 SpEL 编写，返回 true 或者 false，只有为 true 才进行缓存例如：</p>
-<p>@Cacheable(value=”testcache”,condition=”#userName.length()&gt;2”)</p>
+<p><strong>@CachePut 的作用</strong> 主要针对方法配置，能够根据方法的请求参数对其结果进行缓存，**和 @Cacheable 不同的是，它每次都会触发真实方法的调用 </p>
 <p> 表 3. @CacheEvict 作用和配置方法 {: #表-3-cacheevict-作用和配置方法}</p>
 <p><strong>@CachEvict 的作用</strong> 主要针对方法配置，<strong>能够根据一定的条件对缓存进行清空</strong> <strong>@CacheEvict 主要的参数</strong> value缓存的名称，在 spring 配置文件中定义，必须指定至少一个例如：</p>
 <p>@CachEvict(value=”mycache”) 或者</p>
