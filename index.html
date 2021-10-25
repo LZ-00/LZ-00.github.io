@@ -183,10 +183,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2021-10-18 23:42:36 / Modified: 23:44:24" itemprop="dateCreated datePublished" datetime="2021-10-18T23:42:36+08:00">2021-10-18</time>
+              <time title="Created: 2021-10-18 23:42:36" itemprop="dateCreated datePublished" datetime="2021-10-18T23:42:36+08:00">2021-10-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-10-25 22:57:27" itemprop="dateModified" datetime="2021-10-25T22:57:27+08:00">2021-10-25</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -208,7 +214,184 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>hello 计组</p>
+          <h1 id="第一章概述"><a href="#第一章概述" class="headerlink" title="第一章概述"></a>第一章概述</h1><h2 id="冯诺依曼结构计算机工作原理及层次结构分析"><a href="#冯诺依曼结构计算机工作原理及层次结构分析" class="headerlink" title="冯诺依曼结构计算机工作原理及层次结构分析"></a>冯诺依曼结构计算机工作原理及层次结构分析</h2><p><strong>冯诺依曼计算机的工作原理：</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211019231620.png" alt="image-20211019231613656"></p>
+<p><strong>冯诺依曼计算机组成</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211019231721.png" alt="image-20211019231721820"></p>
+<p>1）硬件系统-<strong>运算器</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211019231832.png" alt="image-20211019231832297"></p>
+<p>硬件系统-<strong>控制器</strong></p>
+<p>硬件系统-<strong>存储器</strong></p>
+<ul>
+<li><p>功能：存储原程序、原数据、运算中间结果</p>
+</li>
+<li><p>工作原理：按地址访问，读/写数据</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211019232146.png" alt="image-20211019232146220"></p>
+</li>
+</ul>
+<p>硬件系统-<strong>输入输出设备</strong></p>
+<p>2）软件系统：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211019232319.png" alt="image-20211019232319122"></p>
+<p>3）硬件与软件系统间的关系</p>
+<ul>
+<li>相互依存</li>
+<li>逻辑等效性</li>
+<li>协同发展</li>
+</ul>
+<p><strong>计算机的层级结构</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211019232511.png" alt="image-20211019232511401"></p>
+<ul>
+<li>不同用户处在不同的层次</li>
+<li>不同层次具有不同的属性</li>
+<li>不同层次使用不同的工具</li>
+<li>不同层次代码效率不同</li>
+</ul>
+<p><strong>透明性概念</strong></p>
+<p><strong>系统观</strong></p>
+<p><strong>编程的CPU硬件相关性</strong></p>
+<p><strong>软硬件的分界线：</strong></p>
+<p>​    指令集架构层</p>
+<h2 id="计算机系统性能的评价"><a href="#计算机系统性能的评价" class="headerlink" title="计算机系统性能的评价"></a>计算机系统性能的评价</h2><h3 id="1-非时间指标："><a href="#1-非时间指标：" class="headerlink" title="1 非时间指标："></a>1 非时间指标：</h3><h4 id="1）机器字长：指机器一次能处理的二进制数"><a href="#1）机器字长：指机器一次能处理的二进制数" class="headerlink" title="1）机器字长：指机器一次能处理的二进制数"></a>1）机器字长：指机器一次能处理的二进制数</h4><ul>
+<li>由加法器、寄存器的位数决定</li>
+<li>一般与内部寄存器的位数相等</li>
+<li>字长越长，表示数据的范围就越大，精确度越高</li>
+<li>常见的有32位和64位</li>
+</ul>
+<h4 id="2）-总线宽度：数据总线一次能并行传送的最大信息位数"><a href="#2）-总线宽度：数据总线一次能并行传送的最大信息位数" class="headerlink" title="2） 总线宽度：数据总线一次能并行传送的最大信息位数"></a>2） 总线宽度：数据总线一次能并行传送的最大信息位数</h4><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211019233422.png" alt="image-20211019233422332"></p>
+<h4 id="3）-主存容量与存储带宽"><a href="#3）-主存容量与存储带宽" class="headerlink" title="3） 主存容量与存储带宽"></a>3） 主存容量与存储带宽</h4><ul>
+<li>主存容量：一台计算机主存所包含的存储单元总数</li>
+<li>单位时间内与主存交换的二机制信息量B/s(Byte/s) </li>
+</ul>
+<h3 id="2-时间指标"><a href="#2-时间指标" class="headerlink" title="2 时间指标"></a>2 时间指标</h3><h4 id="1）主频f-时钟周期，外频、倍频"><a href="#1）主频f-时钟周期，外频、倍频" class="headerlink" title="1）主频f/时钟周期，外频、倍频"></a>1）主频f/时钟周期，外频、倍频</h4><p>​       <strong>主频f</strong>:指CPU内核工作的时钟频率，即CPU内数字脉冲信号震荡的速率，与CPU实际的运算能力之间不是唯一的、直接关系</p>
+<p>​       **时钟周期T:**是计算机中最基本的、最小的时间单位。在一个时钟周期内，CPU仅完成一个最基本的动作</p>
+<p>　　<strong>ｆ与T的关系：</strong>互为倒数</p>
+<p>　　<strong>外频：</strong>指CPU（内存）与主板之间同步的时钟频率</p>
+<p>　　<strong>倍频：</strong>CPU主频与外频之间的倍数</p>
+<p>　　<strong>主频＝外频　ｘ　倍频</strong></p>
+<h4 id="２）CPI（Clock-cycles-Per-Instruction-）"><a href="#２）CPI（Clock-cycles-Per-Instruction-）" class="headerlink" title="２）CPI（Clock　cycleｓ　Ｐｅｒ　Instruction　）"></a>２）<strong>CPI</strong>（Clock　cycleｓ　Ｐｅｒ　Instruction　）</h4><ul>
+<li><p>​    执行一条指令（平均需要的时钟周期数（即T周期的个数））</p>
+<p>单条指令CPI、一段程序中所有指令的CPI、指令系统CPI</p>
+</li>
+<li><p>CPI＝程序中所有指令的时钟周期数之和／程序中指令总数</p>
+<ul>
+<li>＝E（程序中各类指令的CPI　ｘ　程序中该指令的比例）</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211019234923.png" alt="image-20211019234922999"></p>
+<p>CPI　＝　１＊６０％＋２＊１８％＋４＊１２％＋８＊１０％</p>
+<p>​        ＝　２.２４</p>
+<p><strong>IPC（Instruction　ｐｅｒ　Clock）</strong></p>
+<p>​        每个时钟周期内执行的指令条数（并行）</p>
+<h4 id="3-MIPS-Million-Instructions-Per-Second"><a href="#3-MIPS-Million-Instructions-Per-Second" class="headerlink" title="3) MIPS(Million Instructions Per Second)"></a>3) <strong>MIPS(Million Instructions Per Second)</strong></h4><ul>
+<li><p>每秒钟CPU能执行的指令总条数（单位：百万条/秒）</p>
+<p>​     MIPS = （指令条数）/（执行时间 x 10^6）</p>
+<p>​               =    (指令条数)  / （所有指令CPU时钟周期数之和 / f）x 10^6</p>
+<p>​               =  （f）/（CPI x 10^6 ）</p>
+</li>
+</ul>
+<h4 id="4-CPU-时间"><a href="#4-CPU-时间" class="headerlink" title="4) CPU 时间"></a>4) CPU 时间</h4><ul>
+<li><p>执行一段程序所需的时间</p>
+<p>（CPU时间+I/O时间+存储访问时间+各类排队时延等）</p>
+<ul>
+<li><p>CPU时间 = 程序中所有指令的时钟周期数之和 x T</p>
+<p>​                = 程序中所有指令的时钟周期数之和 / f</p>
+</li>
+</ul>
+</li>
+</ul>
+<img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020082443.png">
+
+<p><strong>计算机性能指标是确定的吗</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020082916.png" alt="image-20211020082915971"></p>
+<h2 id="计算机性能测试"><a href="#计算机性能测试" class="headerlink" title="计算机性能测试"></a>计算机性能测试</h2><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020084011.png" alt="image-20211020084011590"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020084101.png" alt="image-20211020084101888"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020084217.png" alt="image-20211020084217714"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020084304.png" alt="image-20211020084304800"></p>
+<h2 id="Logisim基础"><a href="#Logisim基础" class="headerlink" title="Logisim基础"></a>Logisim基础</h2><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020090131.png" alt="image-20211020090131631"></p>
+<h1 id="第二章数据表示"><a href="#第二章数据表示" class="headerlink" title="第二章数据表示"></a>第二章数据表示</h1><h2 id="机器数及其特点"><a href="#机器数及其特点" class="headerlink" title="机器数及其特点"></a>机器数及其特点</h2><p><strong>组织数据，方便计算机硬件直接使用</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020091558.png" alt="image-20211020091558169"></p>
+<p><strong>三种常见的机器数：</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020092405.png" alt="image-20211020092405671"></p>
+<p><strong>补码的特点</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020092142.png" alt="image-20211020092141924"></p>
+<hr>
+<p><strong>移码：</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211020125344.png" alt="image-20211020125344259"></p>
+<p>X=+10101 [X]补=010101    [X]移=110101</p>
+<p>X=-10101    [X]补=101010    [X]移=001010</p>
+<p><strong>移码符号位为1表示正数，为0时表示负数</strong></p>
+<h2 id="定点与浮点数据表示"><a href="#定点与浮点数据表示" class="headerlink" title="定点与浮点数据表示"></a>定点与浮点数据表示</h2><p><strong>定点数据表示</strong></p>
+<ol>
+<li>.可表示定点小数和整数</li>
+<li>.表现形式：X0.X1X2X3…Xn.</li>
+<li>定点小数表示数的范围（补码为例）：-1&lt;= x&lt;= 1-2^(-n)</li>
+<li>定点整数表示数的范围（补码为例）：-2^n&lt;= x &lt;=2^n-1</li>
+<li>定点数据表示数的不足：数据表示范围受限</li>
+</ol>
+<p><strong>浮点数据表示</strong></p>
+<p>把数的范围和精度分别表示的一种数据表示方法</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211022090304.png" alt="image-20211022090257728"></p>
+<p><strong>IEEE 754标准</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211022090718.png" alt="image-20211022090718697"></p>
+<p><strong>单精度数据表示（IEEE格式相对应的32位浮点数的真值可表示为）：</strong></p>
+<p>N=（-1）^S x 2^（E-127） x 1.M</p>
+<p>随着E和M的取值不同，IEEE754浮点数据表示具有不同的意义：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211022091226.png" alt="image-20211022091226619"></p>
+<p>IEEE 754 32位浮点数与对应真值之间的变换流程：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211022091553.png" alt="image-20211022091553838"></p>
+<p>例：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211022092012.png" alt="image-20211022092012025"></p>
+<h2 id="数据校验的基本原理"><a href="#数据校验的基本原理" class="headerlink" title="数据校验的基本原理"></a>数据校验的基本原理</h2><p><strong>码距的概念</strong></p>
+<p>同一编码中，任意两个合法编码之间不同的二进制位数的最小值。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211022093041.png" alt="image-20211022093041275"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023213125.png" alt="image-20211023213125767"></p>
+<h2 id="奇偶校验的基本原理"><a href="#奇偶校验的基本原理" class="headerlink" title="奇偶校验的基本原理"></a>奇偶校验的基本原理</h2><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023213452.png" alt="image-20211023213452205"></p>
+<p><strong>一般在同步传输方式中通常采用奇校验，异步传输方式中常采用偶校验。</strong></p>
+<h2 id="CRC校验的基本原理"><a href="#CRC校验的基本原理" class="headerlink" title="CRC校验的基本原理"></a>CRC校验的基本原理</h2><p>有效信息（K位）校验信息（r位）</p>
+<p>N=k+r &lt; = 2^r-1</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023215007.png" alt="image-20211023215007528"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023215505.png" alt="image-20211023215505009"></p>
+<p><strong>CRC编码方法：</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023220234.png" alt="image-20211023220234308"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023220349.png" alt="image-20211023220349611"></p>
+<h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a><strong>分析：</strong></h3><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023220637.png" alt="image-20211023220637474"></p>
+<h3 id="循环特征"><a href="#循环特征" class="headerlink" title="循环特征"></a>循环特征</h3><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023220900.png" alt="image-20211023220900597"></p>
+<h3 id="检错与纠错"><a href="#检错与纠错" class="headerlink" title="检错与纠错"></a>检错与纠错</h3><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023222911.png" alt="image-20211023222911342"></p>
+<h2 id="海明码校验及其发现"><a href="#海明码校验及其发现" class="headerlink" title="海明码校验及其发现"></a>海明码校验及其发现</h2><h3 id="规则："><a href="#规则：" class="headerlink" title="规则："></a>规则：</h3><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023223659.png" alt="image-20211023223659441"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023224222.png" alt="image-20211023224222282"></p>
+<h3 id="计算校验位的值："><a href="#计算校验位的值：" class="headerlink" title="计算校验位的值："></a><strong>计算校验位的值：</strong></h3><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023225246.png" alt="image-20211023225246171"></p>
+<h3 id="举例："><a href="#举例：" class="headerlink" title="举例："></a><strong>举例：</strong></h3><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023225133.png" alt="image-20211023225132994"></p>
+<h3 id="纠错"><a href="#纠错" class="headerlink" title="纠错"></a>纠错</h3><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023225707.png" alt="image-20211023225707722"></p>
+<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><ul>
+<li><strong>指错字G4G3G2G1 = 0000不一定无错</strong></li>
+<li><strong>一位错和两位错不能由指错字区别</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023230146.png" alt="image-20211023230146157"></p>
+<p>因此可以在<strong>海明校验的基础上增加一位奇偶校验位</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211023230334.png" alt="image-20211023230334650"></p>
+<h1 id="第三章定点数运算"><a href="#第三章定点数运算" class="headerlink" title="第三章定点数运算"></a>第三章定点数运算</h1><h2 id="定点数运算及溢出检测"><a href="#定点数运算及溢出检测" class="headerlink" title="定点数运算及溢出检测"></a>定点数运算及溢出检测</h2><p><strong>定点数加法运算：</strong></p>
+<p>【X】补+【Y】补 = 【X+Y】补 mod 2^(n+1)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211025224226.png" alt="image-20211025224219448"></p>
+<p><strong>定点数减法运算</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211025224530.png" alt="image-20211025224530083"></p>
+<h3 id="溢出的概念及其判断方法"><a href="#溢出的概念及其判断方法" class="headerlink" title="溢出的概念及其判断方法"></a>溢出的概念及其判断方法</h3><p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211025224741.png" alt="image-20211025224741047"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211025224827.png" alt="image-20211025224827111"></p>
+<p><strong>判断方法</strong></p>
+<ul>
+<li>溢出只可能发生在同符号数相加时，包括[X]补与[Y]补；[X]补与[-Y]同号<ul>
+<li>方法一：<strong>对操作数和运算结果的符号位进行检测，</strong>当结果的符号位与操作数的符号不相同时，就表明发生了溢出（设X0，Y0为参加运算的符号位，S0为结果的符号位）<ul>
+<li>V=X0Y0S0反 + X0反Y0反S0，当V=1时，运算结果溢出。</li>
+</ul>
+</li>
+<li>方法二：对最高数据进位和符号位进位进行检测：<ul>
+<li><img src="https://cdn.jsdelivr.net/gh/LZ-00/picgo/img/20211025225656.png" alt="image-20211025225656656"></li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
 
       
     </div>
